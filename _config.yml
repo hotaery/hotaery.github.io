@@ -1,9 +1,9 @@
-title: Parchment
-author: pro-panda
-subtitle: The life of a frustrated engineer
+title: hotaery
+author: hotaery
+subtitle: "A blog about my life and my thoughts"
 
-url: "https://rahulbothra.com"
-baseurl: "/parchment"
+url: "https://hotaery.github.io"
+baseurl: ""
 
 footer_only_homepage: true
 footer_url: "https://github.com/rhl-bthr"
@@ -18,7 +18,11 @@ sass:
     sass_dir: css
 
 navbar:
+ - name: "Home"
+   link: "/"
+ - name: "Tags"
+   link: "tags"
+ - name: "Categories"
+   link: "categories" 
  - name: "About"
    link: "about"
- - name: "Resume"
-   absolute-link: "https://rahulbothra.com/cv.pdf"
