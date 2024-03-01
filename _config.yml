@@ -19,7 +19,7 @@ sass:
 
 navbar:
  - name: "Home"
-   link: "/"
+   link: ""
  - name: "Tags"
    link: "tags"
  - name: "About"
