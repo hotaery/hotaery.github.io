@@ -79,7 +79,7 @@ SRAM是有$n$个寄存器构成，其输入包含地址、数据以及控制信�
 |$\mathrm{x}$|10|0|0|$\mathrm{x}$|0|
 |$\mathrm{x}$|11|0|0|0|$\mathrm{x}$|
 
-通过四路选择器可以将$\mathrm{load}$控制信号正确的输送给某个小的SRAM，最后一步就是如何正确地选择四个输出中的一个，也是通过一个思路选择器（Mux4Way）,这个思路选择器和DMux4Way不一样的地方是其接受四个输入和一个控制信号$\mathrm{sel}$，根据$\mathrm{sel}$从四个输入选择一个值作为输出$\mathrm{out}$。
+通过四路选择器可以将$\mathrm{load}$控制信号正确的输送给某个小的SRAM，最后一步就是如何正确地选择四个输出中的一个，也是通过一个四路选择器（Mux4Way）,这个四路选择器和DMux4Way不一样的地方是其接受四个输入和一个控制信号$\mathrm{sel}$，根据$\mathrm{sel}$从四个输入选择一个值作为输出$\mathrm{out}$。
 
 |$\mathrm{a}$|$\mathrm{b}$|$\mathrm{c}$|$\mathrm{d}$|$\mathrm{sel}$|$\mathrm{out}$|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -88,4 +88,4 @@ SRAM是有$n$个寄存器构成，其输入包含地址、数据以及控制信�
 |$\mathrm{a}$|$\mathrm{b}$|$\mathrm{c}$|$\mathrm{d}$|10|$\mathrm{c}$|
 |$\mathrm{a}$|$\mathrm{b}$|$\mathrm{c}$|$\mathrm{d}$|11|$\mathrm{d}$|
 
-对于包含4 k个寄存器的SRAM，其地址长度为12，也可以使用同样的思量继续拆成更小的粒度。
+对于包含4 k个寄存器的SRAM，其地址长度为12，也可以使用同样的思想继续拆成更小的粒度，比如如果支持八路选择器，就可以使用三位地址来选择。
