@@ -13,10 +13,20 @@ $small-width: 480px;
 
 body {
     margin: 0;
-    font-family: "Inconsolata";
+    font-family: "JetBrains Mono", "Noto Sans SC";
     background-color: #FFFFDD;
     min-height: 100%;
 }
+
+code {
+    margin: 0;
+    font-family: "JetBrains Mono", "Noto Sans SC";
+    background-color: #000000;
+    max-height: 100%;
+    max-width: 100%;
+    font-size: 16px;
+}
+
 a {
     text-decoration: none;
     color: $accent;
